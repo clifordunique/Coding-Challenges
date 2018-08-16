@@ -5,16 +5,16 @@ function setup() {
 	makeCircle(0, 0, 300);
 }
 
-function makeCircle(x, y, radius) {
+function makeCircle(x, y, d) {
 	noFill();
 	stroke(255);
 	strokeWeight(2);
-	ellipse(x, y, radius);
+	ellipse(x, y, d);
 
-	if(radius > 4) {//avoid creach error Maximum call stack size exceeded
-		makeCircle(x + radius / 2, y, radius / 2);
-		makeCircle(x - radius / 2, y, radius / 2);
-		makeCircle(x, y - radius / 2, radius / 2);
+	if(d > 4) {//avoid creach error Maximum call stack size exceeded
+		makeCircle(x + d / 2, y, d / 2);
+		makeCircle(x - d / 2, y, d / 2);
+		makeCircle(x, y - d / 2, d / 2);
 	}
 
 }
