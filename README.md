@@ -1,4 +1,4 @@
-# Coding-Challenges-
+# Coding-Challenges
 This is coding challenges in P5.js libraries.
 
 All codes in repository from Youtube tutorial series named coding train contributed byprofessor Danial Shiffman. I am so appreciate his passion and humorous style tutorials.
