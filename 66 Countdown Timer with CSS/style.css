@@ -1,0 +1,19 @@
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'Nosifer', cursive;
+	background: #3A1C71; 
+	background: -webkit-linear-gradient(to top, #FFAF7B, #D76D77, #3A1C71); 
+	background: linear-gradient(to top, #FFAF7B, #D76D77, #3A1C71);
+	background-repeat: no-repeat;
+	font-size: 28px;
+}
+
+#container
+{
+	margin-top: 150px;
+	text-align: center;
+	min-width: 680px;
+}
