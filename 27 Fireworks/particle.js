@@ -44,7 +44,7 @@ function Particle(x, y, fireSeed, hue) {
 			stroke(this.hue, 255, 255, this.lifespan);
 		} else {
 			strokeWeight(4);
-			stroke(this.hue, 255, 255, this.b);
+			stroke(this.hue, 255, 255, 255);
 		}
 		point(this.pos.x, this.pos.y);
 	}
