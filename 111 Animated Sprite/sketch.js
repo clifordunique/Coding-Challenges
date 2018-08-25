@@ -27,7 +27,7 @@ function setup() {
 		horses.push(new Sprite(animations, random(0.2, 1), 0, i * 75));
 	}
 
-	console.log(spritedata);
+	//console.log(spritedata);
 }	
 
 
