@@ -22,7 +22,7 @@ function draw() {
 		ellipse(cities[i].x, cities[i].y, 5, 5);
 	}
 
-	//seraching line
+	//-=-=-=-=-=-=-=-=-=-seraching line-=-=-=-=-=-=-=-=-=-
 	beginShape();
 	for(let i = 0; i < cities.length; i++) {
 		stroke(255);
@@ -31,7 +31,7 @@ function draw() {
 	}
 	endShape();
 
-	//best line
+	//-=-=-=-=-=-=-=-=-=-best line-=-=-=-=-=-=-=-=-=-
 	beginShape();
 	for(let i = 0; i < cities.length; i++) {
 		stroke(255, 0, 200);
@@ -39,6 +39,18 @@ function draw() {
 		vertex(bestEver[i].x, bestEver[i].y);
 	}
 	endShape();
+	
+	//-=-=-=-=-=-=-=-=-=-searching line-=-=-=-=-=-=-=-=-=-
+// 	for(let i = 0; i < cities.length - 1; i++) {
+// 		stroke(255);
+// 		line(cities[i].x, cities[i].y, cities[i + 1].x, cities[i + 1].y);
+// 	}
+
+ 	//-=-=-=-=-=-=-=-=-=-best line-=-=-=-=-=-=-=-=-=-
+// 	for(let i = 0; i < bestEver.length - 1; i++) {
+// 		stroke(200, 0, 100);
+// 		line(bestEver[i].x, bestEver[i].y, bestEver[i + 1].x, bestEver[i + 1].y);
+// 	}
 
 	var i = floor(random(cities.length));
 	var j = floor(random(cities.length));
@@ -61,7 +73,7 @@ function swap(array, i, j) {
 function calaDistance(points) {
 	var sum = 0;
 	for(let i = 0; i < points.length - 1; i++) {
-		var d = dist(points[i].x, points[i].y, points[i + 1].x, points[i + 1].y);
+		var d = dist(points[i].x, points[i].y, points[i + 1].x, points[i + 1].y);//pat attention to the parameter
 		sum += d;
 	}
 	return sum;
