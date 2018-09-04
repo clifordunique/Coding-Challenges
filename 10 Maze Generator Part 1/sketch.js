@@ -15,14 +15,25 @@
 // Else if stack is not empty
 // Pop a cell from the stack
 // Make it the current cell
-var cols, rows;
-var w = 40;
+
+// because this maze made of lines so that we can draw 2d array making them rect
+// function make2DArray(cols, rows) {
+// 	var arr = new Array(cols);
+// 	for(let i = 0; i < arr.length; i++) {
+// 		arr[i] = new Array(cols);
+// 	}
+// 	return arr;
+// }
+var cols;
+var rows;
 var grid = [];
+var w = 20;
+
 
 function setup() {
-	createCanvas(400, 400);
-	cols = width / w;
-	rows = height / w;
+	createCanvas(600, 400);
+	cols = floor(width / w);
+	rows = floor(height / w);
 
 	for(let i = 0; i < cols; i++) {
 		for(let j = 0; j < rows; j++) {
@@ -34,6 +45,7 @@ function setup() {
 
 function draw() {
 	background(0);
+
 	for(let i = 0; i < grid.length; i++) {
 		grid[i].show();
 	}
