@@ -1,24 +1,24 @@
 function Cell(i, j) {
+	this.i = i;
+	this.j = j;
+	this.x = this.i * w;
+	this.y = this.j * w;
+	this.walls = [true, true, true, true];
 
-    this.i = i;
-    this.j = j;
-    this.walls = [true, true, true, true];
+	this.show = function() {
+		stroke(255);
 
-    this.show = function() {
-        var x = this.i * w;
-        var y = this.j * w;
-        stroke(255);
-        if(this.walls[0])
-        {line(x, y, x + w, y);}
-        if(this.walls[1])
-        {line(x + w, y, x + w, y + w);}
-        if(this.walls[2])
-        {line(x + w, y + w, x, y + w);}
-        if(this.walls[3])
-        {line(x, y + w, x, y);}
-        // noFill();
-        // rect(x, y, w, w);//we dont need rect we need walls => line
-    }
-
-
+		if(this.walls[0]) {
+			line(this.x, this.y, this.x + w, this.y);
+		}
+		if(this.walls[1]) {
+			line(this.x + w, this.y, this.x + w, this.y + w);
+		}
+		if(this.walls[2]) {
+			line(this.x + w, this.y + w, this.x, this.y + w);
+		}
+		if(this.walls[3]) {
+			line(this.x, this.y + w, this.x, this.y);
+		}
+	}
 }
