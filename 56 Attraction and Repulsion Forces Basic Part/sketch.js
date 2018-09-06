@@ -1,22 +1,24 @@
 var attractor;
-let particles = [];
+var particles = [];
 
 function setup() {
-	createCanvas(400, 400);
+	createCanvas(800, 500);
 	background(0);
-	attractor = createVector(200, 200);//draw center attractor point
 
+	attractor = createVector(width / 2, height / 2);
+	
 	for(let i = 0; i < 100; i++) {
-		particles.push(new Particle(200, 100));
-	}
+		var particle = new Particle(width / 2, 100);
+		particles.push(particle);
+	}	
 }
 
 function draw() {
-	//background(0);
+	
 
-	stroke(120, 244, 53);
-	strokeWeight(3);
-	point(attractor.x, attractor.y);
+	fill(255, 0, 0);
+	noStroke();
+	ellipse(attractor.x, attractor.y, 5, 5);
 
 	for(let i = 0; i < particles.length; i++) {
 		particles[i].attracted(attractor);
