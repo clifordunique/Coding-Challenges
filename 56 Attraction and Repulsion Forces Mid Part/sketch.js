@@ -22,22 +22,22 @@ function mousePressed() {
 
 function draw() {
 	background(0);
-	stroke(255, 0, 100);
-	strokeWeight(5);
 
 	for(let i = 0; i < attractors.length; i++) {
-		stroke(0, 255, 0);
+		noFill();
+		strokeWeight(5);
 		if(i % 2 == 0) {
 			stroke(0, 255, 0);
 		} else {
 			stroke(255, 0, 0);
 		}
+		
 		point(attractors[i].x, attractors[i].y);
 	}
 
 	for(let i = 0; i < particles.length; i++) {
 		for(let j = 0; j < attractors.length; j++) {
-			particles[i].attracted(attractors[j], j)
+			particles[i].attracted(attractors[j], j);
 		}
 		particles[i].update();
 		particles[i].show();
