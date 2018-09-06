@@ -1,8 +1,9 @@
 function Particle(x, y) {
 
 	this.pos = createVector(x, y);
-	//this.vel = createVector();
+	//this.vel = createVector();//step 1
 	this.vel = p5.Vector.random2D();//random vel to start
+	this.vel.mult(random(2, 6));
 	this.acc = createVector();
 
 	//Euler integration
@@ -19,6 +20,7 @@ function Particle(x, y) {
 	}
 
 	this.attracted = function(target) {
+		//var d = dist(this.pos.x, this.pos.y, target.x, target.y);//error
 		//dir = target - this.pos
 		var force = p5.Vector.sub(target, this.pos);
 		//F = G / d^2;
