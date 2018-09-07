@@ -38,6 +38,7 @@ function draw() {
 		horses[i].show();
 		horses[i].animate();
 	}
+	//image(animations[frameCount % 7]);//single horse
 	//image(spritesheet, 0, 0);
 	//image(animations[frameCount % animations.length], 0, 0);
 }
