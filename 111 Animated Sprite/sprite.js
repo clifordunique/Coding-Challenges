@@ -24,3 +24,26 @@ class Sprite {
 	}
 
 }
+
+//another method
+// function Sprite(animations, speed, x, y) {
+
+// 	this.animations = animations;
+// 	this.speed = speed;
+// 	this.index = 0;
+// 	this.x = x;
+// 	this.y = y;
+
+// 	this.show = function() {
+// 		image(animations[floor(this.index % this.animations.length)], this.x, this.y);
+// 	}
+
+// 	this.animate = function() {
+// 		this.index += this.speed;
+// 		this.x += this.speed * 5;
+// 		if(this.x > width) {
+// 			this.x = -this.animations[0].width;
+// 		}
+// 	}
+
+// }
