@@ -1,5 +1,5 @@
 function Snowflake(sx, sy, img) {
-
+ 
 	let x = sx || random(width);
 	let y = sy || random(height);
 	this.pos = createVector(x, y);
