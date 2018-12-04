@@ -1,0 +1,22 @@
+body {
+	font-family: 'Unlock', cursive;
+	background: #262626; 
+	background-repeat: no-repeat;
+	font-size: 18px;
+}
+
+#container
+{
+	margin-top: 10px;
+	text-align: center;
+	min-width: 680px;
+}
+
+#total
+{
+	color: gray;
+}
+
+#timer{
+	color : pink;
+}
