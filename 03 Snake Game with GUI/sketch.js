@@ -1,5 +1,5 @@
 var scl = 10;
-let snake;
+let snake; 
 let food;
  
 var gui;
