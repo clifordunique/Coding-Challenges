@@ -4,7 +4,7 @@
 // File:Hexamaze.webm
 // Recursive backtracker on a hexagonal grid
 // The depth-first search algorithm of maze generation is frequently implemented using backtracking:
-
+ 
 // Make the initial cell the current cell and mark it as visited
 // While there are unvisited cells
 // If the current cell has any neighbours which have not been visited
