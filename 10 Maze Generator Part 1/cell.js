@@ -4,7 +4,7 @@ function Cell(i, j) {
 	this.x = this.i * w;
 	this.y = this.j * w;
 	this.walls = [true, true, true, true];
- 
+  
 	this.show = function() {
 		stroke(255);
 
