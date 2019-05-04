@@ -1,7 +1,7 @@
 var scl = 10;
 let snake; 
 let food;
-      
+       
 var gui;
 var backgroundColor = [0, 0, 0];
 var fillColor = [255, 255, 255];
