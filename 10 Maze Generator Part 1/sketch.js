@@ -1,7 +1,7 @@
 //Resource
 //https://en.wikipedia.org/wiki/Maze_generation_algorithm
 // Recursive backtracker
-// File:Hexamaze.webm
+// File:Hexamaze.webm 
 // Recursive backtracker on a hexagonal grid
 // The depth-first search algorithm of maze generation is frequently implemented using backtracking:
  
